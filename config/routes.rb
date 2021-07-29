@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get '/signup' => 'users#new'
   post '/signup' => 'users#create'
 
-  get "about" => "about#show"
+  get "abouts" => "abouts#show"
 
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
